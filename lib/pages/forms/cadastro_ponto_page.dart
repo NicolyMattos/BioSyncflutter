@@ -17,17 +17,20 @@ class _CadastroPontoPageState extends State<CadastroPontoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Novo Ponto de Descarte')),
+      backgroundColor: Colors.white,
+      appBar: AppBar(title: const Text('Novo Ponto de Descarte'), backgroundColor: Colors.white,),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
             TextField(
+              style: const TextStyle(color: Colors.black54, fontSize: 16),
               controller: nameController,
               decoration: const InputDecoration(labelText: 'Nome do Local'),
             ),
             const SizedBox(height: 16),
             TextField(
+              style: const TextStyle(color: Colors.black54, fontSize: 16),
               controller: addressController,
               decoration: const InputDecoration(labelText: 'Endereço'),
             ),
